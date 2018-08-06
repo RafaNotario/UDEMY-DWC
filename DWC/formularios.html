@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>&copy;&Nu;&Theta;&Beta;&Theta;</title>
+</head>
+
+<body>
+
+	<h2> Creando nuevos formularios</h2>
+
+	<form class="formulario" novalidate>
+
+		<fieldset>
+			<legend> * Ingresa tus datos. </legend>
+		<label for="nombre"> Nombre: </label>
+		<input type="text" id="nombre" name="nombre" placeholder="Nombre" autocomplete="off" required>
+
+		<br>
+		<br>
+
+		<label for="apellido"> * Apellido: </label>
+		<input type="text" name="apellido" id="apellido" placeholder="Apellido(s)" autocomplete="off" required>
+		<br><br>
+		<label> SExo:</label><br>
+
+		<input type="radio" name="sexo" value="Hombre" id="Hombre" checked="">		<label for="Hombre">Hombre</label> <br>
+		<input type="radio" name="sexo" value="Mujer" id="Mujer" autofocus=""> <label for="Mujer"> Mujer</label> <br>
+		<input type="radio" name="sexo" value="Gay" id="Gay"> <label for="Gay">  Gay </label> 
+		<br><br>
+
+		<label for="fech"> Fecha de nacimiento: </label>
+			<input type="datetime-local" name="fecha">
+			<input type="date" name="fecha">
+
+			<br><br>
+			<label> Correo electronico</label>
+			<input type="email" name="email" placeholder="correo@dominio.com">
+
+			<br><br>
+			<label> Tu sitio web: </label>
+			<input type="url" name="url" placeholder="http://www.tusitioweb.com">
+
+			<br><br>
+			<label> cuanto sabes de html</label>
+			<input type="range" name="puntaje" min="0" max="10">
+
+			<br><br>
+			<label>Personas que viven contigo:</label>
+			<input type="number" name="cantidad" min="1" max="5">
+	</fieldset>
+		<br>
+		<br>
+
+		<fieldset>
+			<legend> Informacion sobre tu curso </legend>
+			<label for="Turno"> Turno: </label>
+			<select class="turno" name="turno" id="Turno">
+				<option value="matutino">Matutino</option>
+				<option value="vespertino" selected="">Vespertino</option>
+				<option value="nocturno"> Nocturno</option>
+			</select>
+		<br><br>
+
+		<label> que curso eliges? </label>
+		<input list="propuesta" name="encusta">
+		<datalist id="propuesta">
+			<option value="Javascript"></option>
+			<option value="JQuery"></option>
+			<option value="EcmaScript"></option>
+			<option value="Angular"></option>
+		</datalist>
+
+		<br><br>
+		<label>Elige tus cursos</label> <br>
+		<input type="checkbox" value="php" id="Php" name=""> PHP <br>
+		<input type="checkbox" value="Html" name=""> HTML5 <br>
+		<input type="checkbox" value="Mysql" name=""> MYSQL 	<br>
+		<input type="checkbox" value="Javascript" name=""> JAVASCRIPT 
+		<br><br>
+
+		<label> Fecha en que deseas iniaciar el curso: </label>
+		<input type="month" name="fecha"> <br>
+		<input type="time" name="fecha"><br>
+		<input type="week" name="fecha">
+		</fieldset>
+
+		<br><br>
+		<fieldset>
+			<legend> Extra </legend>
+			<label> las primeras 10 personas reciben una camisa gratis elige color</label>
+			<input type="color" name="color">
+
+		</fieldset>
+
+		<br><br>
+		<fieldset>
+			<legend> Usuario y password </legend>
+			<label> Usuario </label>
+			<input type="text" name="usuario" placeholder="Usuarioo">
+			<br>
+			<label> Password </label>
+			<input type="password" name="password">t
+		</fieldset>
+
+		<button type="reset" disabled=""> LIMPIAR </button>
+		<button type="submit"> ENVIAR </button>
+<!--		<input type="submit" value="enviar" name="">   -->
+
+</form>
+</body>
+</html>
