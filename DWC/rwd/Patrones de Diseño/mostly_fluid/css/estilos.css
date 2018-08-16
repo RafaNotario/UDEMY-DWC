@@ -1,0 +1,32 @@
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: arial, helvetica;
+
+}
+div.contenido-superior {
+  padding: 20px;
+  background-color: blue;
+}
+
+div.contenido-inferior > div {
+  padding:20px;
+  background-color: red;
+}
+
+@media only screen and (min-width: 768px){
+  div.contenido-inferior > div {/*AFECTA A LOS ELEMENTOS HIJO*/
+    width: 50%;
+    float: left;
+  }
+
+  div.contenedor{
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+}
+
+
