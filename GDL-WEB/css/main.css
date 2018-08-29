@@ -1,3 +1,4 @@
+
 /*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
 
 /*
@@ -109,7 +110,61 @@ html{
 
 body{
     background-color: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
 }
+
+.contenedor{
+    width: 95%;
+    margin: 0 auto;
+}
+/*MEDIA PARA LA BARRA DE NAVEGACION MENU*/
+@media only screen and (min-width: 480px){
+    .contenedor{
+        width: 95%;
+    }
+
+}
+
+@media only screen and (min-width: 768px){
+    .contenedor{
+        width: 90%;
+    }
+
+}
+@media only screen and (min-width: 992px){
+    .contenedor{
+        width: 90%;
+        max-width: 1100px;
+    }
+
+}
+
+.seccion{
+    padding: 30px 0;
+}
+
+.seccion p{
+    font-size: 1.2em;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.4em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2::after{
+/*siempre que se utiliza un after se utiliza content*/
+    content: '';
+    margin: 0 auto;
+    background-image: url(../img/separador.png);
+    height: 30px;
+    width: 100px;
+    display: block;
+}
+
 
 /* HEADER*/
 div.hero{
@@ -170,6 +225,7 @@ div.informacion-evento p{
 
 div.informacion-evento p i{
    color: #fe4918; 
+   font-size: 2.4rem;
 }
 
 p.fecha{
@@ -181,15 +237,127 @@ p.ciudad{
     text-align: right;
 }
 
+p.slogan{
+    text-transform: none!important;
+}
 
+p.slogan span{
+    font-weight: bold;
+}
 
+h1.nombre-sitio{
+    font-size: 5.9vw;
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif;
+}
 
+@media only screen and (min-width: 768px){
+    h1.nombre-sitio{
+    font-size: 8vw;
+    margin: 0;
+    line-height: 1;
+}   
+}
 
+/*barra de navegacion*/
+div.barra{
+    background-color: #353535;
+    padding: 20px 0;
+}
 
+div.logo{
+    width: 80%;
+    float: left; 
+}
 
+div.logo img{/*para que la imagen ocupe el 100% de su contenedor div*/
+     width: 100%;
+}
 
+@media only screen and (min-width: 768px){
+    div.logo{
+        width: 33%;
+    }
+}
 
+/*nav principla
 
+nav.navegacion-principal{
+    display: none;/*por ser movil-first
+}
+*/
+
+nav.navegacion-principal a{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .3s ease;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+nav.navegacion-principal a:hover{
+    background-color: #fe4918;
+
+}
+/*para el ultimo enlace del nav principal */
+nav.navegacion-principal a:last-child{
+    border: 2px solid #fe4918;
+    color: #f34918;
+}
+
+nav.navegacion-principal a:last-child:hover{
+    color: white;
+}
+
+@media only screen and (min-width: 768px){
+    nav.navegacion-principal{
+        width: 67%;
+        float: right;
+        text-align: right;
+        display: block;
+    }
+
+    nav.navegacion-principal a{
+        margin-right: 10px;
+        padding: 10px 10px;
+        display: inline-block;
+        width: auto;
+        display: inline-block;
+        text-align: center;
+        margin: 0 10px 0 0;
+    }
+}
+
+/* menu movil*/
+div.menu-movil{
+    width: 60px;
+    display: block;
+    float: right;
+    text-align: right;
+    margin-top: 12px;
+}
+
+div.menu-movil:hover{
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px){
+    div.menu-movil{
+        display: none;
+    }
+}
+
+div.menu-movil span {
+    height: 8px;
+    margin-bottom: 6px;
+    background-color: white;
+    display: block;
+}
 
 
 
